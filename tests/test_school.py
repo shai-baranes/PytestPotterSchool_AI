@@ -3,6 +3,9 @@ script_path = os.path.realpath(os.path.dirname(__name__))
 os.chdir(script_path)
 sys.path.append("..")
 
+# sys.path (list of paths): (adding the up one folder of the script path)
+# ['..', 'C:/Python_Rust_Removal/PytestPotterSchool_AI/tests', , , , , ,  ...]
+
 import pytest
 from src.school import Classroom, Teacher, Student, TooManyStudents, Person
 
